@@ -67,6 +67,8 @@ function generatePassword() {
 
   }
 
+  var generatePassword = ""
+
   for (var i = 0; i < passwordLength; i++) {
     var randomItem = getRandomItem(optionCart)
     var randomChar = getRandomItem(randomItem)
