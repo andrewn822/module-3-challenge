@@ -21,15 +21,13 @@ function generatePassword () {
     return;
     }
   
-    if (userInput > 128) {
-      alert('Please enter a number less than 128')
-      return;
-    } else {
-      window.prompt('Do you want your password to include lower cases?')
-      window.prompt('Do you want your password to include upper cases?')
-      window.prompt('Do you want your password to include numbers?')
-      window.prompt('Do you want your password to include special characters?')
-    }
+  if (userInput > 128) {
+    alert('Please enter a number less than 128')
+    return;
+  } 
+
+  const lowerChoice = confirm('Use lower cases?');
+  
 
 }
 
